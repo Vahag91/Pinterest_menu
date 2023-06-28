@@ -1,0 +1,147 @@
+.top-nav {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-right: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+
+.link1 {
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+}
+
+.link2 {
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    color: black;
+}
+
+.submenu {
+    width: 200px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 990;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.menu:hover .submenu {
+    display: block;
+}
+
+
+
+.menu .submenu div:hover {
+    background-color: rgb(220, 216, 210);
+}
+
+
+
+.search-container {
+    flex-grow: 1;
+    position: relative;
+}
+
+.search-container .search-input:hover {
+    background-color: rgb(230, 223, 223);
+}
+
+.search-input {
+    padding: 10px 10px 10px 30px;
+    border-radius: 8px;
+    width: 90%;
+    border: none;
+    background-color: #eaeaea;
+    border-radius: 30px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+
+
+.sidemenu a {
+   padding: 10px 10px;
+  color: #625f5f;
+   }
+
+   .sidemenu span {
+    font-size: 20px;
+   }
+.sidemenu a:hover{
+    background-color: rgb(223, 218, 218);
+    border-radius: 100%;
+}
+
+
+
+
+
+.grid {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    width: 30%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.grid-item img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+
+.grid-item .icons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.grid-item:hover .icons {
+    display: block;
+}
+
+.icon {
+    margin-left: 5px;
+    color: black;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 10px;
+    border-radius: 100%;
+    transition: all 0.5s linear;
+}
+
+.icon:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+}
